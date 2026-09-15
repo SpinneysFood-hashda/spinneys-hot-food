@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinneys Hot Food</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1>Spinneys Hot Food</h1>
+        <p>Freshly prepared favorites from Spinneys</p>
+      </div>
+      <div id="itemCount" class="item-count"></div>
+    </header>
+
+    <section class="toolbar">
+      <div class="search-box">
+        <span class="search-icon">⌕</span>
+        <input id="searchInput" type="search" placeholder="Search items or codes..." autocomplete="off">
+        <button id="clearSearch" class="clear-button" type="button">×</button>
+      </div>
+
+      <div class="filters">
+        <select id="locationFilter">
+          <option value="ALL">All locations</option>
+        </select>
+        <select id="unitFilter">
+          <option value="ALL">All units</option>
+          <option value="KG">KG</option>
+          <option value="EACH">EACH</option>
+        </select>
+      </div>
+    </section>
+
+    <nav id="categoryNav" class="category-nav"></nav>
+    <section id="productsContainer"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
