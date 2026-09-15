@@ -284,3 +284,31 @@ select {
   .product-image { height: 185px; }
   .filters { display: grid; grid-template-columns: 1fr 1fr; }
 }
+
+.image-source {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  z-index: 2;
+  max-width: calc(100% - 16px);
+  font-size: 10px;
+  line-height: 1;
+}
+
+.product-image {
+  position: relative;
+}
+
+.image-credit {
+  display: inline-block;
+  padding: 4px 6px;
+  border-radius: 5px;
+  background: rgba(255,255,255,.88);
+  color: #5f6f7f;
+  text-decoration: none;
+  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+}
+
+.image-credit:hover {
+  color: #e52329;
+}
